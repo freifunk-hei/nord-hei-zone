@@ -1,7 +1,7 @@
 $TTL 86400
 $ORIGIN ffnord.
 @                                 IN        SOA   vpn0.ffnord. admin.ffnord.net. (
-                                  2016102601 ; serial
+                                  2016110301 ; serial
                                   1h         ; refresh
                                   15m        ; retry
                                   1w         ; expire
@@ -22,6 +22,7 @@ $ORIGIN ffnord.
 				  IN        NS    vpn12
 				  IN        NS    vpn13
 				  IN        NS    vpn14
+				  IN        NS    vpn15
 				  
 ; Hosts
 vpn0                    86400     IN        A     10.187.160.1
@@ -54,7 +55,8 @@ vpn13                   86400     IN        A     10.187.110.1
                                             AAAA  2a03:2267:4e6f:7264::fd13                                            
 vpn14                   86400     IN        A     10.187.120.1
                                             AAAA  2a03:2267:4e6f:7264::fd14
-					    
+vpn15                   86400     IN        A     10.187.140.1
+                                            AAAA  2a03:2267:4e6f:7264::fd15					    
 ; NTP Server
 0.ntp.services          86400     IN        A     10.187.160.1
                                             AAAA  2a03:2267:4e6f:7264::fd00
@@ -86,6 +88,8 @@ vpn14                   86400     IN        A     10.187.120.1
                                             AAAA  2a03:2267:4e6f:7264::fd13                                            
 14.ntp.services         86400     IN        A     10.187.120.1
                                             AAAA  2a03:2267:4e6f:7264::fd14                                            
+15.ntp.services         86400     IN        A     10.187.140.1
+                                            AAAA  2a03:2267:4e6f:7264::fd15
 ; Update Server
 0.update                    86400     IN        A     10.187.160.1
                                             AAAA  2a03:2267:4e6f:7264::fd00
@@ -117,6 +121,8 @@ vpn14                   86400     IN        A     10.187.120.1
                                             AAAA  2a03:2267:4e6f:7264::fd13                                            
 14.update                   86400     IN        A     10.187.120.1
                                             AAAA  2a03:2267:4e6f:7264::fd14                                            
+15.update                   86400     IN        A     10.187.140.1
+                                            AAAA  2a03:2267:4e6f:7264::fd15 
 ; Nextnode
 nextnode		    86400     IN        A     10.187.254.254
 					    AAAA  2a03:2267:4e6f:7264::ffff
