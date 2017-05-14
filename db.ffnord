@@ -1,7 +1,7 @@
 $TTL 86400
 $ORIGIN ffnord.
 @                                 IN        SOA   0.ffnord. admin.ffnord.net. (
-                                  2017050401 ; serial
+                                  2017051401 ; serial
                                   1h         ; refresh
                                   15m        ; retry
                                   1w         ; expire
@@ -162,7 +162,7 @@ $ORIGIN ffnord.
                                             AAAA  fd42:eb49:c0b5:4242::fd20 
 
 ; Nextnode
-node                        86400     IN        A     10.187.254.254
+node                        86400     IN        A     10.187.127.254
 					    AAAA  fd42:eb49:c0b5:4242::ffff
 local-node                  86400     IN        CNAME node
 localnode                   86400     IN        CNAME node
