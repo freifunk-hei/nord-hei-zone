@@ -1,7 +1,7 @@
 $TTL 86400
 $ORIGIN ffnord.
 @                                 IN        SOA   0.ffnord. admin.ffnord.net. (
-                                  2017051401 ; serial
+                                  2017060701 ; serial
                                   1h         ; refresh
                                   15m        ; retry
                                   1w         ; expire
@@ -28,6 +28,7 @@ $ORIGIN ffnord.
 				  IN        NS    18.gw
 				  IN        NS    19.gw
 				  IN        NS    20.gw
+				  IN        NS    l2tp.gw
 				  
 ; Hosts
 0.gw                    86400     IN        A     10.187.1.1
@@ -72,7 +73,8 @@ $ORIGIN ffnord.
                                             AAAA  fd42:eb49:c0b5:4242::fd19
 20.gw                   86400     IN        A     10.187.81.1
                                             AAAA  fd42:eb49:c0b5:4242::fd20					    
-
+l2tp.gw                 86400     IN        A     10.187.85.1
+                                            AAAA  fd42:eb49:c0b5:4242::fd21
 ; NTP Server
 0.ntp.services          86400     IN        A     10.187.1.1
                                             AAAA  fd42:eb49:c0b5:4242::fd00
@@ -116,7 +118,9 @@ $ORIGIN ffnord.
                                             AAAA  fd42:eb49:c0b5:4242::fd19                                            
 20.ntp.services         86400     IN        A     10.187.81.1
                                             AAAA  fd42:eb49:c0b5:4242::fd20
-
+l2tp.ntp.services       86400     IN        A     10.187.85.1
+                                            AAAA  fd42:eb49:c0b5:4242::fd21
+					    
 ; Update Server
 0.update                    86400     IN        A     10.187.1.1
                                             AAAA  fd42:eb49:c0b5:4242::fd00
@@ -160,6 +164,8 @@ $ORIGIN ffnord.
                                             AAAA  fd42:eb49:c0b5:4242::fd19                                            
 20.update                   86400     IN        A     10.187.81.1
                                             AAAA  fd42:eb49:c0b5:4242::fd20 
+l2tp.update                 86400     IN        A     10.187.85.1
+                                            AAAA  fd42:eb49:c0b5:4242::fd21					    
 
 ; Nextnode
 node                        86400     IN        A     10.187.127.254
