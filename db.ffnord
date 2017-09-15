@@ -1,171 +1,35 @@
 $TTL 86400
 $ORIGIN ffnord.
 @                                 IN        SOA   0.ffnord. admin.ffnord.net. (
-                                  2017060701 ; serial
+                                  2017091501 ; serial
                                   1h         ; refresh
                                   15m        ; retry
                                   1w         ; expire
                                   1d)        ; ttl
 ; Nameserver
-                                  IN        NS    0.gw
-                                  IN        NS    1.gw
-                                  IN        NS    2.gw
-                                  IN        NS    3.gw
-                                  IN        NS    4.gw
-                                  IN        NS    5.gw
-                                  IN        NS    6.gw
-                                  IN        NS    7.gw
-                                  IN        NS    8.gw
-                                  IN        NS    9.gw
-                                  IN        NS    10.gw
-                                  IN        NS    11.gw
-				  IN        NS    12.gw
-				  IN        NS    13.gw
-				  IN        NS    14.gw
-				  IN        NS    15.gw
-                                  IN        NS    16.gw
-				  IN        NS    17.gw
-				  IN        NS    18.gw
-				  IN        NS    19.gw
-				  IN        NS    20.gw
-				  IN        NS    l2tp.gw
+                                  IN        NS    0.gw.ahb
+                                  IN        NS    1.gw.ahb
+                                  IN        NS    2.gw.ahb
 				  
 ; Hosts
-0.gw                    86400     IN        A     10.187.1.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd00
-1.gw                    86400     IN        A     10.187.5.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd01
-2.gw                    86400     IN        A     10.187.9.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd02
-3.gw                    86400     IN        A     10.187.13.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd03
-4.gw                    86400     IN        A     10.187.17.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd04
-5.gw                    86400     IN        A     10.187.21.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd05
-6.gw                    86400     IN        A     10.187.25.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd06
-7.gw                    86400     IN        A     10.187.29.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd07
-8.gw                    86400     IN        A     10.187.33.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd08
-9.gw                    86400     IN        A     10.187.37.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd09
-10.gw                   86400     IN        A     10.187.41.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd10                                            
-11.gw                   86400     IN        A     10.187.45.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd11
-12.gw                   86400     IN        A     10.187.49.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd12
-13.gw                   86400     IN        A     10.187.53.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd13                                            
-14.gw                   86400     IN        A     10.187.57.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd14
-15.gw                   86400     IN        A     10.187.61.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd15					    
-16.gw                   86400     IN        A     10.187.65.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd16
-17.gw                   86400     IN        A     10.187.69.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd17
-18.gw                   86400     IN        A     10.187.73.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd18                                            
-19.gw                   86400     IN        A     10.187.77.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd19
-20.gw                   86400     IN        A     10.187.81.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd20					    
-l2tp.gw                 86400     IN        A     10.187.85.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd21
+0.gw.ahb                    86400     IN        A     10.187.100.1
+                                            AAAA  fd42:eb49:c0b5:4242::ff00
+1.gw.ahb                    86400     IN        A     10.187.104.1
+                                            AAAA  fd42:eb49:c0b5:4242::ff01
+2.gw.ahb                    86400     IN        A     10.187.108.1
+                                            AAAA  fd42:eb49:c0b5:4242::ff02
+
 ; NTP Server
-0.ntp.services          86400     IN        A     10.187.1.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd00
-1.ntp.services          86400     IN        A     10.187.5.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd01
-2.ntp.services          86400     IN        A     10.187.9.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd02
-3.ntp.services          86400     IN        A     10.187.13.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd03
-4.ntp.services          86400     IN        A     10.187.17.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd04
-5.ntp.services          86400     IN        A     10.187.21.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd05
-6.ntp.services          86400     IN        A     10.187.25.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd06
-7.ntp.services          86400     IN        A     10.187.29.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd07
-8.ntp.services          86400     IN        A     10.187.33.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd08
-9.ntp.services          86400     IN        A     10.187.37.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd09
-10.ntp.services         86400     IN        A     10.187.41.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd10
-11.ntp.services         86400     IN        A     10.187.45.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd11
-12.ntp.services         86400     IN        A     10.187.49.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd12
-13.ntp.services         86400     IN        A     10.187.53.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd13                                            
-14.ntp.services         86400     IN        A     10.187.57.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd14                                            
-15.ntp.services         86400     IN        A     10.187.61.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd15
-16.ntp.services         86400     IN        A     10.187.65.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd16
-17.ntp.services         86400     IN        A     10.187.69.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd17
-18.ntp.services         86400     IN        A     10.187.73.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd18                                            
-19.ntp.services         86400     IN        A     10.187.77.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd19                                            
-20.ntp.services         86400     IN        A     10.187.81.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd20
-l2tp.ntp.services       86400     IN        A     10.187.85.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd21
+0.ahb.ntp.services          86400     IN        A     10.187.100.1
+                                            AAAA  fd42:eb49:c0b5:4242::ff00
+1.ahb.ntp.services          86400     IN        A     10.187.104.1
+                                            AAAA  fd42:eb49:c0b5:4242::ff01
+2.ahb.ntp.services          86400     IN        A     10.187.108.1
+                                            AAAA  fd42:eb49:c0b5:4242::ff02
 					    
 ; Update Server
-0.update                    86400     IN        A     10.187.1.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd00
-1.update                    86400     IN        A     10.187.5.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd01
-2.update                    86400     IN        A     10.187.9.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd02
-3.update                    86400     IN        A     10.187.13.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd03
-4.update                    86400     IN        A     10.187.17.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd04
-5.update                    86400     IN        A     10.187.21.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd05
-6.update                    86400     IN        A     10.187.25.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd06
-7.update                    86400     IN        A     10.187.29.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd07
-8.update                    86400     IN        A     10.187.33.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd08
-9.update                    86400     IN        A     10.187.37.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd09
-10.update                   86400     IN        A     10.187.41.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd10
-11.update                   86400     IN        A     10.187.45.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd11
-12.update                   86400     IN        A     10.187.49.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd12
-13.update                   86400     IN        A     10.187.53.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd13                                            
-14.update                   86400     IN        A     10.187.57.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd14                                            
-15.update                   86400     IN        A     10.187.61.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd15 
-16.update                   86400     IN        A     10.187.65.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd16
-17.update                   86400     IN        A     10.187.69.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd17
-18.update                   86400     IN        A     10.187.73.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd18                                            
-19.update                   86400     IN        A     10.187.77.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd19                                            
-20.update                   86400     IN        A     10.187.81.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd20 
-l2tp.update                 86400     IN        A     10.187.85.1
-                                            AAAA  fd42:eb49:c0b5:4242::fd21					    
+0.ahb.update                86400     IN        A     10.187.100.1
+                                            AAAA  fd42:eb49:c0b5:4242::ff00
 
 ; Nextnode
 node                        86400     IN        A     10.187.127.254
