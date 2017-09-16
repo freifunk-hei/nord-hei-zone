@@ -14,17 +14,17 @@ $ORIGIN ffnord.
 ; Hosts
 0.gw.ahb                    86400     IN        A     10.187.100.1
                                             AAAA  fd42:eb49:c0b5:4242::ff00
-1.gw.ahb                    86400     IN        A     10.187.104.1
+1.gw.ahb                    86400     IN        A     10.187.102.1
                                             AAAA  fd42:eb49:c0b5:4242::ff01
-2.gw.ahb                    86400     IN        A     10.187.108.1
+2.gw.ahb                    86400     IN        A     10.187.104.1
                                             AAAA  fd42:eb49:c0b5:4242::ff02
 
 ; NTP Server
 0.ahb.ntp.services          86400     IN        A     10.187.100.1
                                             AAAA  fd42:eb49:c0b5:4242::ff00
-1.ahb.ntp.services          86400     IN        A     10.187.104.1
+1.ahb.ntp.services          86400     IN        A     10.187.102.1
                                             AAAA  fd42:eb49:c0b5:4242::ff01
-2.ahb.ntp.services          86400     IN        A     10.187.108.1
+2.ahb.ntp.services          86400     IN        A     10.187.104.1
                                             AAAA  fd42:eb49:c0b5:4242::ff02
 					    
 ; Update Server
