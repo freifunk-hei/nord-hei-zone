@@ -1,7 +1,7 @@
 $TTL 86400
 $ORIGIN ffnord.
 @                                 IN        SOA   0.ffnord. admin.ffnord.net. (
-                                  2017091501 ; serial
+                                  2017112401 ; serial
                                   1h         ; refresh
                                   15m        ; retry
                                   1w         ; expire
@@ -10,6 +10,7 @@ $ORIGIN ffnord.
                                   IN        NS    0.gw.ahb
                                   IN        NS    1.gw.ahb
                                   IN        NS    2.gw.ahb
+				  IN        NS    3.gw.ahb
 				  
 ; Hosts
 0.gw.ahb                    86400     IN        A     10.187.100.1
@@ -18,7 +19,9 @@ $ORIGIN ffnord.
                                             AAAA  fd42:eb49:c0b5:4242::ff01
 2.gw.ahb                    86400     IN        A     10.187.104.1
                                             AAAA  fd42:eb49:c0b5:4242::ff02
-
+3.gw.ahb                    86400     IN        A     10.187.106.1
+                                            AAAA  fd42:eb49:c0b5:4242::ff03
+					    
 ; NTP Server
 0.ahb.ntp.services          86400     IN        A     10.187.100.1
                                             AAAA  fd42:eb49:c0b5:4242::ff00
