@@ -1,42 +1,27 @@
 $TTL 86400
 $ORIGIN ffnord.
 @                                 IN        SOA   0.ffnord. admin.ffnord.net. (
-                                  2017112401 ; serial
+                                  2019010701 ; serial
                                   1h         ; refresh
                                   15m        ; retry
                                   1w         ; expire
                                   1d)        ; ttl
 ; Nameserver
-                                  IN        NS    0.gw.ahb
-                                  IN        NS    1.gw.ahb
-                                  IN        NS    2.gw.ahb
-				  IN        NS    3.gw.ahb
+                                  IN        NS    0.gw.iz
 				  
 ; Hosts
-0.gw.ahb                    86400     IN        A     10.187.100.1
-                                            AAAA  fd42:eb49:c0b5:4242::ff00
-1.gw.ahb                    86400     IN        A     10.187.102.1
-                                            AAAA  fd42:eb49:c0b5:4242::ff01
-2.gw.ahb                    86400     IN        A     10.187.104.1
-                                            AAAA  fd42:eb49:c0b5:4242::ff02
-3.gw.ahb                    86400     IN        A     10.187.106.1
-                                            AAAA  fd42:eb49:c0b5:4242::ff03
-					    
+0.gw.iz                    86400     IN        A     10.187.100.1
+                                            AAAA  fd42:eb49:c0b5:4242::fc00
 ; NTP Server
-0.ahb.ntp.services          86400     IN        A     10.187.100.1
-                                            AAAA  fd42:eb49:c0b5:4242::ff00
-1.ahb.ntp.services          86400     IN        A     10.187.102.1
-                                            AAAA  fd42:eb49:c0b5:4242::ff01
-2.ahb.ntp.services          86400     IN        A     10.187.104.1
-                                            AAAA  fd42:eb49:c0b5:4242::ff02
-					    
+0.iz.ntp.services          86400     IN        A     10.187.100.1
+                                            AAAA  fd42:eb49:c0b5:4242::fc00
 ; Update Server
-0.ahb.update                86400     IN        A     10.187.100.1
-                                            AAAA  fd42:eb49:c0b5:4242::ff00
-
+0.iz.update                86400     IN        A     10.187.100.1
+                                            AAAA  fd42:eb49:c0b5:4242::fc00
 ; Nextnode
 node                        86400     IN        A     10.187.127.254
 					    AAAA  fd42:eb49:c0b5:4242::ffff
+
 local-node                  86400     IN        CNAME node
 localnode                   86400     IN        CNAME node
 next-node                   86400     IN        CNAME node
