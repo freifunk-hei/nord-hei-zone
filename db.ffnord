@@ -1,7 +1,7 @@
 $TTL 86400
 $ORIGIN ffnord.
 @                                 IN        SOA   0.ffnord. admin.ffnord.net. (
-                                  2019110601 ; serial
+                                  2019110801 ; serial
                                   1h         ; refresh
                                   15m        ; retry
                                   1w         ; expire
@@ -9,15 +9,18 @@ $ORIGIN ffnord.
 ; Nameserver
                                   IN        NS    0.gw.hei
 				  
+; IP Range .130. bis .135.
+; DHCPD Range .140./19
+
 ; Hosts
 0.gw.hei                    86400     IN        A     10.187.130.1
-                                            AAAA  fd42:eb49:c0b5:4242::fb00
+                                            AAAA  fd42:eb49:c0b5:4242::fe00
 ; NTP Server
 0.hei.ntp.services          86400     IN        A     10.187.130.1
-                                            AAAA  fd42:eb49:c0b5:4242::fb00
+                                            AAAA  fd42:eb49:c0b5:4242::fe00
 ; Update Server
 0.hei.update                86400     IN        A     10.187.130.1
-                                            AAAA  fd42:eb49:c0b5:4242::fb00
+                                            AAAA  fd42:eb49:c0b5:4242::fe00
 ; Nextnode
 node                        86400     IN        A     10.187.127.254
 					    AAAA  fd42:eb49:c0b5:4242::ffff
